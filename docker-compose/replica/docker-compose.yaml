@@ -1,3 +1,4 @@
+# https://nmihaylov.medium.com/setting-up-a-local-mongodb-replica-set-with-a-single-node-e04fb3213123
 version: '3.9'
 services:
   mongo:
@@ -9,4 +10,5 @@ services:
       - ./rs-initiate.js:/docker-entrypoint-initdb.d/rs-initiate.js
     ports:
       - "27017:27017"
-    command: ["--replSet", "dbrs", "--bind_ip_all"]
+    # The parameters instruct the Mongo instance, that it’s part of a replica set named dbrs and that it should bind all IP addresses.
+    command: [ "--replSet", "dbrs", "--bind_ip_all" ]
