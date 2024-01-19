@@ -1,4 +1,5 @@
 # https://github.com/sofieneBK/Hands-on-debezium-cdc-with-springboot/blob/main/docker-compose.yml
+# Volume ile DB doldurma kısmı çalışmıyor
 version: '3.8'
 networks:
   mongo-net:
