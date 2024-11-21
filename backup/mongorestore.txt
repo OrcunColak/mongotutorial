@@ -1,0 +1,4 @@
+mongorestore
+  --authenticationDatabase <ROOT_DB_NAME> -db
+  --db <DB_NAME_INSIDE_NEW_MONGODB_TO_RESTORE_DATA>
+  --uri "mongodb://<USERNAME>:<PASSWORD>@<MONGODB_HOST>:<PORT>" <PATH_TO_DOWNLOADED_BACKUP>

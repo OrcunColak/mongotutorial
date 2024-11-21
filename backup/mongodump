@@ -1,0 +1,1 @@
+mongodump mongodb://<USERNAME>:<PASSWORD>@<MONGODB_HOST>:<PORT>/ --out <PATH_TO_BACKUP>
